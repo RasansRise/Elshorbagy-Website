@@ -3966,7 +3966,7 @@ a.text-theme:hover,
   color: var(--theme-color);
 }
 .main-menu > ul > li {
-  margin: 0 18px;
+  margin: 0 0 0 18px;
 }
 .main-menu > ul > li > a .new-label {
   position: absolute;
@@ -4995,7 +4995,7 @@ a.text-theme:hover,
 }
 
 .footer-layout5 {
-  border-top: 2px solid var(--theme-color);
+  border-top: 2px solid rgb(19 55 115 / 50%);
   background-color: #fafafb;
 }
 @media (min-width: 1199px) {
@@ -9783,9 +9783,7 @@ blockquote.vs-quote .quote-author {
 .process-style1:nth-child(even) .process-arrow {
   transform: rotateY(180deg);
 }
-.process-style1:last-child .process-arrow {
-  display: none;
-}
+
 .process-style1 .process-icon {
   position: relative;
   text-align: center;
