@@ -7461,6 +7461,8 @@ blockquote.vs-quote .quote-author {
   margin: -178px 0 0 auto;
   width: fit-content;
   max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .img-box5 {
