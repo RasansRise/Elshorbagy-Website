@@ -74,7 +74,7 @@ Version: 1.0.0
 :root {
   --theme-color: #133773;
   --title-color: #1A1A1A;
-  --body-color: #878D97;
+  --body-color: #1A1A1A;
   --smoke-color: #EFF1F5;
   --secondary-color: #EEF2FB;
   --black-color: #000000;
@@ -9968,7 +9968,7 @@ blockquote.vs-quote .quote-author {
 }
 .accordion-style1.layout2 .accordion-button {
   padding: 14.5px 25px;
-  font-size: 16px;
+  font-size: 22px;
   background-color: var(--theme-color);
   color: var(--white-color);
   border-radius: 0;
