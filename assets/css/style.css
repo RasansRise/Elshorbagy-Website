@@ -9934,6 +9934,9 @@ blockquote.vs-quote .quote-author {
   width: auto;
   height: auto;
   background-image: none;
+  margin-left:unset;
+  margin-right: auto;
+  transform: scale(-1);
 }
 .accordion-style1 .accordion-button:hover {
   color: var(--theme-color);
