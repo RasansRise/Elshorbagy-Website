@@ -9732,6 +9732,7 @@ blockquote.vs-quote .quote-author {
   position: absolute;
   right: -53px;
   top: 0;
+  transform: scale(-1);
 }
 .process-style1:nth-child(even) {
   margin-top: 60px;
