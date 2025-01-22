@@ -99,6 +99,32 @@ Version: 1.0.0
 .ar{
   text-align: right;
 }
+
+.overlay-layer::before{
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(19 55 115 / 30%);
+  z-index: 100;
+}
+.ls-slide-backgrounds::before{
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(19 55 115 / 30%);
+  z-index: 100;
+}
+.overlay-layer *{
+
+  z-index: 101;
+}
+
 .home-five,
 .home-four {
   --theme-color: #0037ff;
@@ -6087,16 +6113,8 @@ blockquote.vs-quote .quote-author {
   gap: 20px;
   min-width: max-content;
 }
-.ls-slide-backgrounds::before{
-  content: "";
-  display: block;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(19 55 115 / 30%);
-  z-index: 100;
-}
+
+
 .ls-arrow-vertical .icon-btn, .ls-arrow-vertical .hero-layout4 .slick-arrow, .hero-layout4 .ls-arrow-vertical .slick-arrow {
   display: block;
   margin-bottom: 20px;
