@@ -72,7 +72,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #0E5AF2;
+  --theme-color: #133773;
   --title-color: #1A1A1A;
   --body-color: #878D97;
   --smoke-color: #EFF1F5;
@@ -86,7 +86,7 @@ Version: 1.0.0
   --title-font: "Cairo", serif;
   --body-font: "Cairo", serif;
   --icon-font: "Font Awesome 5 Pro";
-  --main-container: 1220px;
+  --main-container: 1320px;
   --container-gutters: 30px;
   --section-space: 120px;
   --section-space-mobile: 80px;
@@ -3480,7 +3480,8 @@ a.text-theme:hover,
 }
 
 .footer-logo {
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  margin-top:-40px;
 }
 
 .footer-text {
@@ -3697,7 +3698,7 @@ a.text-theme:hover,
 }
 
 .footer-info-list {
-  margin: 35px 0 22px 0;
+  margin: 10px 0 22px 35px;
 }
 .footer-info-list .info {
   position: relative;
@@ -3823,6 +3824,19 @@ a.text-theme:hover,
 .will-sticky .sticky-active.active .header-layout4 .menu-style1 > ul > li > a {
   color: #071a3e;
 }
+.header-layout3 .header-logo{
+  max-width: 150px;
+}
+
+@media(min-width:992px){
+  .header-layout3 .header-logo{
+    position: absolute;
+    top:-50px;
+    right:0;
+    max-width:300px;
+  }
+}
+
 
 .header-layout4 .header-logo {
   display: flex;
@@ -4960,7 +4974,7 @@ a.text-theme:hover,
 }
 @media (min-width: 1199px) {
   .footer-layout5 {
-    padding-top: 192px;
+    padding-top: 0;
   }
 }
 .footer-layout5 .widget-area {
@@ -4968,7 +4982,7 @@ a.text-theme:hover,
   padding-bottom: 50px;
 }
 .footer-layout5 .widget_title {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   margin-top: 10px;
   font-weight: 600;
 }
@@ -6073,7 +6087,16 @@ blockquote.vs-quote .quote-author {
   gap: 20px;
   min-width: max-content;
 }
-
+.ls-slide-backgrounds::before{
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(19 55 115 / 30%);
+  z-index: 100;
+}
 .ls-arrow-vertical .icon-btn, .ls-arrow-vertical .hero-layout4 .slick-arrow, .hero-layout4 .ls-arrow-vertical .slick-arrow {
   display: block;
   margin-bottom: 20px;
@@ -8812,8 +8835,8 @@ blockquote.vs-quote .quote-author {
   width: 100%;
 }
 .service-style6 .service-icon-box {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   line-height: 100px;
   border-radius: 50%;
   margin: 0 auto 24px auto;
@@ -8867,7 +8890,7 @@ blockquote.vs-quote .quote-author {
   transition: all 0.4s ease;
 }
 .service-style6:hover {
-  background-color: #0e59f2;
+  background-color: var(--theme-color);
 }
 .service-style6:hover .service-title {
   color: var(--white-color);
@@ -11940,7 +11963,7 @@ blockquote.vs-quote .quote-author {
   line-height: 1;
   color: var(--theme-color);
   align-self: flex-start;
-  margin: 0 15px 0 0;
+  margin: 0 0 0 15px;
 }
 .contact-box__label {
   font-size: 18px;
@@ -11964,7 +11987,7 @@ blockquote.vs-quote .quote-author {
   font-size: 16px;
   border-radius: 5px;
   border: none;
-  background-position: right 21px center;
+  background-position: left 21px center;
 }
 .contact-box__form i {
   top: 19px;
