@@ -3857,9 +3857,9 @@ a.text-theme:hover,
 @media(min-width:992px){
   .header-layout3 .header-logo{
     position: absolute;
-    top:-25px;
+    top:14px;
     right:0;
-    max-width:300px;
+    max-width:200px;
   }
 }
 
@@ -9776,6 +9776,13 @@ blockquote.vs-quote .quote-author {
   right: -53px;
   top: 0;
   transform: scale(-1);
+}
+.process-style1 .process-arrow.left{
+  transform:rotate(0) !important;
+  left:-53px;
+  top:53px;
+  right:auto;
+
 }
 .process-style1:nth-child(even) {
   margin-top: 60px;
